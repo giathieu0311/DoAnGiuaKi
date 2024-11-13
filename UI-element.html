@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TheTree Dashboard</title>
+    <link href="./asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/UI-element.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="image-admin/LOGO-2.png" alt="">
+            <h2>The Tree</h2>
+        </div>
+
+        <div class="items">
+            <li onclick="window.location.href='admin.html';"><i class="fa-solid fa-chart-pie"></i><a href="#">Bảng Điều khiển</a></li>
+            <li onclick="window.location.href='UI-element.html';"><i class="fa-brands fa-pagelines"></i><a href="#">Sản phẩm</a></li>
+            <li><i class="fa-brands fa-elementor"></i><a href="#">Dữ liệu người dùng</a></li>
+            <!-- <li><i class="fa-solid fa-table"></i><a href="#">Tables</a></li> -->
+            <li  onclick="window.location.href='form.html';"><i class="fa-solid fa-pen-to-square"></i></i><a href="#">Thêm sản phẩm</a></li>
+            <!-- <li><i class="fa-solid fa-credit-card"></i><a href="#">Cards</a></li> -->
+            <li onclick="window.location.href='thong-ke.html';"><i class="fa-solid fa-chart-line"></i><a href="#">Blank</a></li>
+
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fa-regular fa-bell"></i>
+                <img src="image-admin/admin.jpg" alt="">
+            </div>
+            <div class="thongbao">
+                <h3>Gia Thiệu</h3>
+                <ul>
+                    <li>
+                        <i class="fa-regular fa-user"></i>
+                        <a href="#">Hồ sơ</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#">Cài đặt</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <a class="logout-btn" href="#">Đăng xuất</a>
+                        <script src="js/logout.js"></script>
+                    </li>
+    
+    
+                </ul>
+            </div>
+            <script src="js/admin.js"></script> 
+        </div>
+
+        <h3 class="i-name">Dữ liệu sản phẩm </h3>
+
+        <div class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Tên sản phẩm</td>
+                        <td>Phân loại</td>
+                        <td>Trạng thái</td>
+                        <td>Số lượng</td>
+                        <td>Chỉnh sữa</td>
+                        <td>Xóa</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="people">
+                            <img src="img/CAY5.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Cây Phát Tài</h5>
+                                <p>750.000 vnđ</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Cây Văn Phòng </h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active">
+                            <p>Còn hàng</p>
+                        </td>
+
+                        <td class="role">
+                            <p>100</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="admin-details.html">Edit</a>
+                        </td>
+
+                        <td class="trash">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chú ý</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Bạn có muốn xóa sản phầm này không</h5>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Đóng</button>
+                                            <button type="button" class="btn btn-primary">Xóa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="img/cay6.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Cây Kim Ngân</h5>
+                                <p>280.000 vnđ</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Cây để bàn</h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active">
+                            <p>Còn hàng</p>
+                        </td>
+
+                        <td class="role">
+                            <p>147</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="admin-details.html">Edit</a>
+                        </td>
+                        <td class="trash">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="img/cay7.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Cây trầu bà</h5>
+                                <p>120.000 vnđ</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Cây trong nước</h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active">
+                            <p>Còn hàng</p>
+                        </td>
+
+                        <td class="role">
+                            <p>288</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="admin-details.html">Edit</a>
+                        </td>
+                        <td class="trash">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="img/cay8.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Cây Lan Chi</h5>
+                                <p>120.000 vnđ</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Cây dễ chăm </h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active">
+                            <p>Còn hàng</p>
+                        </td>
+
+                        <td class="role">
+                            <p>65</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="admin-details.html">Edit</a>
+                        </td>
+                        <td class="trash">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="img/cay9.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Cây Trầu Bà Đỏ</h5>
+                                <p>320.000 vnđ</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Cây văn phòng </h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active">
+                            <p>Còn hàng</p>
+                        </td>
+
+                        <td class="role">
+                            <p>86 </p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="admin-details.html">Edit</a>
+                        </td>
+                        <td class="trash">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('#menu').toggleClass("active");
+        })
+    </script>
+</body>
+
+</html>

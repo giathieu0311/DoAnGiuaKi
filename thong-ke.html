@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TheTree Dashboard</title>
+    <link href="./asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/thong-ke.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/plotly.min.js"></script>
+
+</head>
+
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="image-admin/LOGO-2.png" alt="">
+            <h2>The Tree</h2>
+        </div>
+
+        <div class="items">
+            <li onclick="window.location.href='admin.html';"><i class="fa-solid fa-chart-pie"></i><a href="#">Bảng Điều
+                    khiển</a></li>
+            <li onclick="window.location.href='UI-element.html';"><i class="fa-brands fa-pagelines"></i><a href="#">Sản
+                    phẩm</a></li>
+            <li><i class="fa-brands fa-elementor"></i><a href="#">Dữ liệu người dùng</a></li>
+            <!-- <li><i class="fa-solid fa-table"></i><a href="#">Tables</a></li> -->
+            <li onclick="window.location.href='form.html';"><i class="fa-solid fa-pen-to-square"></i></i><a
+                    href="#">Thêm sản phẩm</a></li>
+            <!-- <li><i class="fa-solid fa-credit-card"></i><a href="#">Cards</a></li> -->
+            <li onclick="window.location.href='thong-ke.html';"><i class="fa-solid fa-chart-line"></i><a href="#">Blank</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fa-regular fa-bell"></i>
+                <img src="image-admin/admin.jpg" alt="">
+            </div>
+            <div class="thongbao">
+                <h3>Gia Thiệu</h3>
+                <ul>
+                    <li>
+                        <i class="fa-regular fa-user"></i>
+                        <a href="#">Hồ sơ</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#">Cài đặt</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <a class="logout-btn" href="#">Đăng xuất</a>
+                        <script src="js/logout.js"></script>
+                    </li>
+
+
+                </ul>
+            </div>
+            <script src="js/admin.js"></script>
+
+        </div>
+
+        <h3 class="i-name">Thống kê sản phẩm theo tháng </h3>
+
+        <div class="thongkesanpham">
+            <canvas id="myChart" style="width:80%;max-width: 1200px;"></canvas>
+            <p id="year">Năm 2024</p>
+            <div class="btn-tree">
+                <div class="button">
+                    <p>Cây Phát Tài</p>
+                </div>
+                <div class="button">
+                    <p>Cây Kim Ngân</p>
+                </div>
+                <div class="button">
+                    <p>Cây Trầu Bà</p>
+                </div> 
+            </div>
+        </div>
+        <p id="doanhso">- Cây Bán Chạy: cây Phát Tài </p>
+        <p id="doanhso">- Cây không bán chạy: cây Trầu Bà</p>
+
+        <h3 class="thongkedoanhso">Thống kê doanh số </h3>
+        <canvas id="myChartv1" style="width:100%;max-width:800px"></canvas>
+
+        <p id="doanhso">- Tổng doanh số: 122.875.000 vnđ</p>
+        <p id="doanhso">- Doanh số cây Phát Tài : 80.000.000 vnđ</p>
+        <p id="doanhso">- Doanh số cây Kim Ngân 30.875.000 vnđ</p>
+        <p id="doanhso">- Doanh số cây Trầu Bà: 10.000.000 vnđ</p>
+
+        <h3 class="thongkedoanhso">Thống kê top năm người mua hàng nhiều nhất  </h3>
+
+        <div class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Tên</td>
+                        <td>Địa Chỉ</td>
+                        <td>Trạng thái</td>
+                        <td>Đã mua</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="people">
+                            <img src="image-admin/admin.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Gia Thiệu</h5>
+                                <p>thieu0311@gmail.com</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Hóc Môn</h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active"><p>VIP</p></td>
+
+                        <td class="role">
+                            <p>26 </p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">Chi tiết</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="image-admin/person1.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Sơn Tùng</h5>
+                                <p>thieu0311@gmail.com</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Hà Nội </h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active"><p>VIP</p></td>
+
+                        <td class="role">
+                            <p>25</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">Chi tiết</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="image-admin/person2.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Chi Pu</h5>
+                                <p>thieu0311@gmail.com</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Hồ Chí Minh </h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active"><p>VIP</p></td>
+
+                        <td class="role">
+                            <p>22</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">Chi tiết</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="image-admin/person3.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Phương Mỹ Chi</h5>
+                                <p>thieu0311@gmail.com</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Hải Phòng </h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active"><p>VIP</p></td>
+
+                        <td class="role">
+                            <p>21 </p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">Chi tiết</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="people">
+                            <img src="image-admin/person4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Trấn Thành</h5>
+                                <p>thieu0311@gmail.com</p>
+                            </div>
+                        </td>
+
+                        <td class="people-des">
+                            <h5>Đà Nẵng </h5>
+                            <!-- <p>Web dev</p> -->
+                        </td>
+
+                        <td class="active"><p>VIP</p></td>
+
+                        <td class="role">
+                            <p>17 </p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">Chi tiết</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="js/thongke.js"></script>
+
+
+
+</body>
+
+</html>
