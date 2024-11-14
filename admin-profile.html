@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Admin</title>
-    <!-- Font Awesome -->
-    <link href="./asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/admin-profile.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Admin</title>
+  <!-- Font Awesome -->
+  <link href="./asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/admin-profile.css" />
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <section id="menu">
+    <div class="logo">
+        <img src="image-admin/LOGO-2.png" alt="">
+        <h2>The Tree</h2>
+    </div>
+
+    <div class="items">
+        <li onclick="window.location.href='admin.html';"><i class="fa-solid fa-chart-pie"></i><a href="#">Bảng Điều
+                khiển</a></li>
+        <li onclick="window.location.href='UI-element.html';"><i class="fa-brands fa-pagelines"></i><a href="#">Sản
+                phẩm</a></li>
+        <li><i class="fa-brands fa-elementor"></i><a href="#">Dữ liệu người dùng</a></li>
+        <!-- <li><i class="fa-solid fa-table"></i><a href="#">Tables</a></li> -->
+        <li onclick="window.location.href='form.html';"><i class="fa-solid fa-pen-to-square"></i></i><a
+                href="#">Thêm sản phẩm</a></li>
+        <!-- <li><i class="fa-solid fa-credit-card"></i><a href="#">Cards</a></li> -->
+        <li onclick="window.location.href='thong-ke.html';"><i class="fa-solid fa-chart-line"></i><a
+                href="#">Blank</a></li>
+
+    </div>
+</section>
+
+  <section id="interface">
+    <div class="navigation">
+      <div class="n1">
+          <div>
+              <i id="menu-btn" class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search">
+          </div>
+      </div>
+
+      <div class="profile">
+          <i class="fa-regular fa-bell"></i>
+          <img src="image-admin/admin.jpg" alt="">
+      </div>
+      <div class="thongbao">
+          <h3>Gia Thiệu</h3>
+          <ul>
+              <li>
+                  <i class="fa-regular fa-user"></i>
+                  <a href="admin-profile.html">Hồ sơ</a>
+              </li>
+
+              <li>
+                  <i class="fa-solid fa-gear"></i>
+                  <a href="#">Cài đặt</a>
+              </li>
+              <li>
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <a class="logout-btn" href="#">Đăng xuất</a>
+              </li>
+          </ul>
+      </div>
+      <script src="js/admin.js"></script>
+  </div>
+
     <div class="header__wrapper">
       <header></header>
       <div class="cols__container">
@@ -26,11 +89,12 @@
           <ul id="admin" class="about">
             <li><span>4,073</span>Followers</li>
             <li><span>322</span>Following</li>
-          </ul >
+          </ul>
 
           <div class="content">
             <p>
-              Bổ sung thêm cây xanh là một cách đơn giản nhất để tạo ra sự thoải mái cho không gian sống của bạn, giúp mang lại hiệu quả công việc và thư giãn mỗi khi trở về
+              Bổ sung thêm cây xanh là một cách đơn giản nhất để tạo ra sự thoải mái cho không gian sống của bạn, giúp
+              mang lại hiệu quả công việc và thư giãn mỗi khi trở về
             </p>
 
             <ul id="admin">
@@ -38,7 +102,7 @@
               <i class="fa-brands fa-pinterest-p"></i>
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-dribbble"></i>
-            </ul >
+            </ul>
           </div>
         </div>
         <div class="right__col">
@@ -48,7 +112,7 @@
               <li><a href="">galleries</a></li>
               <li><a href="">groups</a></li>
               <li><a href="">about</a></li>
-            </ul >
+            </ul>
           </nav>
 
           <div class="photos">
@@ -62,5 +126,14 @@
         </div>
       </div>
     </div>
-  </body>
+  </section>
+
+  <script>
+    $('#menu-btn').click(function () {
+        $('#menu').toggleClass("active");
+    })
+</script>
+<script src="js/logout.js"></script>
+</body>
+
 </html>
