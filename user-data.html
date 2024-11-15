@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TheTree Dashboard</title>
+    <link href="./asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/user-data.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="image-admin/LOGO-2.png" alt="">
+            <h2>The Tree</h2>
+        </div>
+
+        <div class="items">
+            <li onclick="window.location.href='admin.html';"><i class="fa-solid fa-chart-pie"></i><a href="detail-order.html">Bảng Điều khiển</a></li>
+            <li onclick="window.location.href='UI-element.html';"><i class="fa-brands fa-pagelines"></i><a href="detail-order.html">Sản phẩm</a></li>
+            <li onclick="window.location.href='user-data.html';"><i class="fa-brands fa-elementor"></i><a href="detail-order.html">Dữ liệu người dùng</a></li>
+            <!-- <li><i class="fa-solid fa-table"></i><a href="detail-order.html">Tables</a></li> -->
+            <li  onclick="window.location.href='form.html';"><i class="fa-solid fa-pen-to-square"></i></i><a href="detail-order.html">Thêm sản phẩm</a></li>
+            <!-- <li><i class="fa-solid fa-credit-card"></i><a href="detail-order.html">Cards</a></li> -->
+            <li onclick="window.location.href='thong-ke.html';"><i class="fa-solid fa-chart-line"></i><a href="detail-order.html">Blank</a></li>
+
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fa-regular fa-bell"></i>
+                <img src="image-admin/admin.jpg" alt="">
+            </div>
+            <div class="thongbao">
+                <h3>Gia Thiệu</h3>
+                <ul>
+                    <li>
+                        <i class="fa-regular fa-user"></i>
+                        <a href="admin-details.html">Hồ sơ</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#">Cài đặt</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <a class="logout-btn" href="admin-login.html">Đăng xuất</a>
+                        <script src="js/logout.js"></script>
+                    </li>
+    
+    
+                </ul>
+            </div>
+            <script src="js/admin.js"></script> 
+        </div>
+
+        <div class="tieu-de d-flex justify-content-between">
+          <h3 class="i-name">Dữ liệu sản phẩm </h3>
+          <i class="filter-icon fa-solid fa-sort"></i>
+        </div>
+
+        <div class="filter">    
+            <div class="filter-feature" style="font-weight: bold;">
+                <span class="d-flex align-items-center flex-row">Từ ngày: </span>
+            <input type="text" placeholder=" dd/mm/yy">
+                <span class="d-flex align-items-center flex-row" style="padding-left: 6px;">Đến ngày: </span>
+            <input type="text" placeholder=" dd/mm/yy">
+            </div>
+
+            <div class="order-status">
+                <button type="button" class="btn dropdown-toggle" style="font-weight: bold;" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tình trạng đơn hàng
+                </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item" type="button">Chờ xử lý</button></li>
+                <li><button class="dropdown-item" type="button">Đã xác nhận</button></li>
+                <li><button class="dropdown-item" type="button">Đã giao</button></li>
+                <li><button class="dropdown-item" type="button">Đã hủy</button></li>
+            </ul>
+            </div>
+
+            <div class="order-status">
+                <button type="button" class="btn dropdown-toggle" style="font-weight: bold; margin: 0 -3px;" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lọc theo quận
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><button class="dropdown-item" type="button">Quận 1</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 2</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 3</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 5</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 6</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 7</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 8</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 9</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 10</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 11</button></li>
+                    <li><button class="dropdown-item" type="button">Quận 12</button></li>
+                    <li><button class="dropdown-item" type="button">Quận Bình Thạnh</button></li>
+                    <li><button class="dropdown-item" type="button">Quận Gò Vâp</button></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="filter-button btn btn-success">Lọc</div>
+
+        <!-- Lọc trên mobile  -->
+         <div class="filter-mobile">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Lọc</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><span style="font-weight: bold;">Từ ngày: </span><input type="text" placeholder="dd/mm/yy"></li>
+                <li><span style="font-weight: bold;">Đến ngày: </span><input style="width: 11em;" type="text" placeholder="dd/mm/yy"></li>
+            <li>
+                <span style="font-weight: bold;">Tình trạng</span>
+                <select name="" id="">
+                    <option value="">Chờ xử lý</option>
+                    <option value="">Đã xác nhận</option>
+                    <option value="">Đã giao</option>
+                    <option value="">Đã hủy</option>
+                </select> <br>
+            </li>
+
+            <li>
+                <span class="loc">Theo quận</span>
+                <select name="" id="">
+                    <option value="">Quận Tân Bình</option>
+                    <option value="">Quận Bình Tân</option>
+                    <option value="">Quận Thử Đức</option>
+                    <option value="">Quận 11</option>
+                    <option value="">Huyện Bình Chánh</option>
+            </select> <br>
+            </li>
+            </ul>
+        </div>
+
+
+
+        <div class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td class="maDonHang">Mã đơn hàng</td>
+                        <td class="tenKhachHang">Tên khách hàng</td>
+                        <td class="tenSanPham">Tên sản phẩm</td>
+                        <td class="soLuong">Số lượng</td>
+                        <td class="thoiGianDatHang">Thời gian đặt hàng</td>
+                        <td class="trangThai">Trạng thái</td>
+                        <td class="thanhTien">Thành tiền</td>
+                        <td class="chiTiet">Chi tiết</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td class="maDonHang">DH001</td>
+                      <td class="tenKhachHang">Nguyễn Phước Sang</td>
+                      <td class="tenSanPham">Cây Phát Tài</td>
+                      <td class="soLuong">3</td>
+                      <td class="thoiGianDatHang">12/10/2024</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: hsl(57, 100%, 78%); border-radius: 28px;">Chưa xử lý</button></td>
+                      <td class="thanhTien">2.250.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+
+                    <tr style="background: #e6eaee;">
+                      <td class="maDonHang">DH002</td>
+                      <td class="tenKhachHang">Nguyễn Gia Thiệu</td>
+                      <td class="tenSanPham">Cây Kim Ngân</td>
+                      <td class="soLuong">1</td>
+                      <td class="thoiGianDatHang">01/11/2024</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: #3789d0; border-radius: 28px;">Đã xác nhận</button></td>
+                      <td class="thanhTien">280.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+
+                    <tr>
+                      <td class="maDonHang">DH003</td>
+                      <td class="tenKhachHang">Nguyễn Gia Huy</td>
+                      <td class="tenSanPham">Cây Trầu Bà</td>
+                      <td class="soLuong">2</td>
+                      <td class="thoiGianDatHang">05/10/2024</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: #4baf50; border-radius: 28px;">Đã giao</button></td>
+                      <td class="thanhTien">120.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+
+                    <tr style="background: #e6eaee;">
+                      <td class="maDonHang">DH004</td>
+                      <td class="tenKhachHang">Lê Hoàng Phúc</td>
+                      <td class="tenSanPham">Cây Phát Tài</td>
+                      <td class="soLuong">4</td>
+                      <td class="thoiGianDatHang">15/12/2024</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: #4baf50; border-radius: 28px;">Đã giao</button></td>
+                      <td class="thanhTien">3.000.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+
+                    <tr>
+                      <td class="maDonHang">DH005</td>
+                      <td class="tenKhachHang">Nguyễn Duy Khôi</td>
+                      <td class="tenSanPham">Cây Lan Chi</td>
+                      <td class="soLuong">1</td>
+                      <td class="thoiGianDatHang">22/12/2023</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: #ed1c25; border-radius: 28px;">Chưa xử lý</button></td>
+                      <td class="thanhTien">120.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+
+                    <tr style="background: #e6eaee;">
+                      <td class="maDonHang">DH006</td>
+                      <td class="tenKhachHang">Trinh Trần Phương Tuấn</td>
+                      <td class="tenSanPham">Cây Lưỡi Hổ</td>
+                      <td class="soLuong">5</td>
+                      <td class="thoiGianDatHang">13/05/2023</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: hsl(57, 100%, 78%); border-radius: 28px;">Chưa xử lý</button></td>
+                      <td class="thanhTien">600.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+
+                    <tr>
+                      <td class="maDonHang">DH007</td>
+                      <td class="tenKhachHang">Nguyễn Văn Tình</td>
+                      <td class="tenSanPham">Cây Hạnh Phúc</td>
+                      <td class="soLuong">1</td>
+                      <td class="thoiGianDatHang">11/02/2024</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: #4baf50; border-radius: 28px;">Đã giao</button></td>
+                      <td class="thanhTien">130.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+
+                    <tr style="background: #e6eaee;">
+                      <td class="maDonHang">DH008</td>
+                      <td class="tenKhachHang">Nguyễn Xuân Mai</td>
+                      <td class="tenSanPham">Cây Trầu Bà</td>
+                      <td class="soLuong">2</td>
+                      <td class="thoiGianDatHang">30/11/2024</td>
+                      <td class="trangThai"><button class="btn" style="width: 117px; background-color: #3789d0; border-radius: 28px;">Đã xác nhận</button></td>
+                      <td class="thanhTien">640.000</td>
+                      <td class="chiTietDonHang"><a href="detail-order.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('#menu').toggleClass("active");
+        })
+    </script>
+</body>
+
+</html>
