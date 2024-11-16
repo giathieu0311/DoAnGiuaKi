@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/user-register.css">
   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
   <script src="asset/js/bootstrap.bundle.min.js"></script>
+
   <script></script>
   <title>Hoàn tất đặt hàng </title>
 </head>
@@ -150,49 +151,79 @@
   </div>
 
   <!-- ARTICLE -->
-  <section class="form-container">
-    
-    <form class="row g-3">
+  <section class="form-container ">
+    <form class="row g-3 needs-validation" novalidate>
       <div class="col-md-4">
-        <label for="validationDefault01" class="form-label">First name</label>
-        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+        <label for="validationCustom01" class="form-label">Họ và tên</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Họ và tên..." required>
+        <div class="valid-feedback">
+          Hoàn tất
+        </div>
+        <div class="invalid-feedback">
+          Nhập họ tên vào
+        </div>
       </div>
       <div class="col-md-4">
-        <label for="validationDefault02" class="form-label">Last name</label>
-        <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+        <label for="validationCustom02" class="form-label">Số điện thoại</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Số điện thoại..." required>
+        <div class="valid-feedback">
+          Hoàn tất
+        </div>
+        <div class="invalid-feedback">
+          Nhập số điện thoại
+        </div>
       </div>
       <div class="col-md-4">
-        <label for="validationDefaultUsername" class="form-label">Username</label>
-        <div class="input-group">
-          <span class="input-group-text" id="inputGroupPrepend2">@</span>
-          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+        <label for="validationCustomUsername" class="form-label">Gmail</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+            placeholder="Gmail..." required>
+          <div class="invalid-feedback">
+            Nhập gmail vào
+          </div>
         </div>
       </div>
       <div class="col-md-6">
-        <label for="validationDefault03" class="form-label">City</label>
-        <input type="text" class="form-control" id="validationDefault03" required>
+        <label for="validationCustom03" class="form-label">Địa chỉ</label>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="Địa chỉ..." required>
+        <div class="invalid-feedback">
+          Nhập địa chỉ vào
+        </div>
       </div>
       <div class="col-md-3">
-        <label for="validationDefault04" class="form-label">State</label>
-        <select class="form-select" id="validationDefault04" required>
+        <label for="validationCustom04" class="form-label">Quốc gia</label>
+        <select class="form-select" id="validationCustom04" required>
           <option selected disabled value="">Choose...</option>
-          <option>...</option>
+          <option>Hồ Chí Minh</option>
+          <option>Bình Định</option>
+          <option>Cần thơ</option>
+          <option>Bình Dương</option>
         </select>
+        <div class="invalid-feedback">
+          Chọn quốc gia
+        </div>
       </div>
       <div class="col-md-3">
-        <label for="validationDefault05" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="validationDefault05" required>
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-          <label class="form-check-label" for="invalidCheck2">
-            Agree to terms and conditions
-          </label>
+        <label for="validationCustom05" class="form-label">Ghi chú thêm </label>
+        <input type="text" class="form-control" id="validationCustom05">
+        <div class="invalid-feedback">
+
         </div>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Bạn chắc chắn với những thông tin này
+          </label>
+          <div class="invalid-feedback">
+            Bạn quên đóng dấu nè
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-success" type="submit">Đăng ký </button>
       </div>
     </form>
   </section>
