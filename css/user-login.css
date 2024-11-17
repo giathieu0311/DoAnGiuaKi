@@ -379,9 +379,16 @@ body {
   width: 100%;
 }
 
+#dangky{
+  text-align: center;
+  margin-top: 30px;
+  color: #1c8e2e;
+  font-size: 25px;
+}
+
 form{
-  width: 50%;
-  margin: 50px auto 30px;
+  width: 30%;
+  margin: 40px auto 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -578,6 +585,11 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+  form{
+    width: 50%;
+
+  }
 }
 
 /* TABLET  */
@@ -627,6 +639,10 @@ footer {
 
   .frame-2 {
     width: 80%;
+  }
+  form{
+    width: 60%;
+
   }
 }
 
@@ -705,5 +721,10 @@ footer {
   .col-03 {
     justify-content: start;
     align-items: flex-start;
+  }
+
+  form{
+    width: 80%;
+
   }
 }
