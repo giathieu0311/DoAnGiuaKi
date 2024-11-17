@@ -4,260 +4,90 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/user-register.css">
+  <!-- <link rel="stylesheet" href="./css/user-register.css"> -->
   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
   <script src="asset/js/bootstrap.bundle.min.js"></script>
   <script></script>
   <title>Hoàn tất đặt hàng </title>
 </head>
 
-<body>
-  <div class="container-fluid">
-    <!-- HEADER  -->
-    <div class="header">
-      <!-- MENU  -->
-      <div class="grid">
-        <div class="aaa"></div>
-        <div class="item-header">
-
-
-          <div class="search-group">
-            <input type="search" placeholder="Search..." style="position: relative; left: 15%;">
-            <button class="btn"><img src="character/search.svg" style="position: relative; top: -15%"
-                alt="search"></button>
-          </div>
-
-
-
-          <div class="cart-icon">
-            <a href="gio-hang.html"><img src="character/cart.svg" alt="cart"></a>
-          </div>
-          <div class="user-icon">
-
-            <label for="tick"><img src="character/user.svg" alt=""></label>
-            <input id="tick" hidden type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-              aria-controls="offcanvasExample" />
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-              aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Nguyễn Phước Sang</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
-                  style="position: relative; right: 10px;"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hồ sơ</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Lịch sử mua hàng</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Đăng xuất</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+<body style="background-color: rgb(112, 106, 106);">
+  <section class="form-container ">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Họ và tên</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Họ và tên..." required>
+        <div class="valid-feedback">
+          Hoàn tất
+        </div>
+        <div class="invalid-feedback">
+          Nhập họ tên vào
         </div>
       </div>
-
-      <!-- BAR  -->
-      <nav class="navbar  position-absolute">
-        <div class="a">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">THEE TREE</h5>
-              <button type="button" class="btn-close" style="position: relative; right: 10px;"
-                data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body offcanvas-fullscreen mt-20">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Giới thiệu</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Sản phẩm
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Cây trong nhà</a></li>
-                    <li><a class="dropdown-item" href="#">Cây dễ chăm</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Cây dưới nước</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Liên hệ</a>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Số điện thoại</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Số điện thoại..." required>
+        <div class="valid-feedback">
+          Hoàn tất
         </div>
-      </nav>
-    </div>
-  </div>
-
-
-
-  <!-- NAV  -->
-  <div class="nav">
-    <div class="brand">
-      <div class="brand-logo">
-        <!-- Quay về trang chủ  -->
-        <a href="trang-chu"><img class="img-fluid" src="img/LOGO-2.png" alt="LOGO"></a>
-      </div>
-      <div class="brand-name">THE TREE</div>
-    </div>
-    <div class="choose">
-      <ul>
-        <li><a href="">Trang chủ</a></li>
-        <li><a href="">Giới thiệu</a></li>
-        <li><a href="">Sản phẩm</a></li>
-        <li><a href="">Tin tức</a></li>
-        <li><a href="">Liên hệ</a></li>
-      </ul>
-    </div>
-  </div>
-
-
-
-  <!-- SECTION  -->
-  <div class="section">
-    <div class="img-21">
-      <img src="img/CAY21.jpg" alt="CAY21">
-    </div>
-  </div>
-
-  <!-- ARTICLE -->
-  <section class="form-container">
-    
-    <form class="row g-3">
-      <div class="col-md-4">
-        <label for="validationDefault01" class="form-label">First name</label>
-        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+        <div class="invalid-feedback">
+          Nhập số điện thoại
+        </div>
       </div>
       <div class="col-md-4">
-        <label for="validationDefault02" class="form-label">Last name</label>
-        <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefaultUsername" class="form-label">Username</label>
-        <div class="input-group">
-          <span class="input-group-text" id="inputGroupPrepend2">@</span>
-          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+        <label for="validationCustomUsername" class="form-label">Gmail</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+            placeholder="Gmail..." required>
+          <div class="invalid-feedback">
+            Nhập gmail vào
+          </div>
         </div>
       </div>
       <div class="col-md-6">
-        <label for="validationDefault03" class="form-label">City</label>
-        <input type="text" class="form-control" id="validationDefault03" required>
+        <label for="validationCustom03" class="form-label">Địa chỉ</label>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="Địa chỉ..." required>
+        <div class="invalid-feedback">
+          Nhập địa chỉ vào
+        </div>
       </div>
       <div class="col-md-3">
-        <label for="validationDefault04" class="form-label">State</label>
-        <select class="form-select" id="validationDefault04" required>
+        <label for="validationCustom04" class="form-label">Quốc gia</label>
+        <select class="form-select" id="validationCustom04" required>
           <option selected disabled value="">Choose...</option>
-          <option>...</option>
+          <option>Hồ Chí Minh</option>
+          <option>Bình Định</option>
+          <option>Cần thơ</option>
+          <option>Bình Dương</option>
         </select>
+        <div class="invalid-feedback">
+          Chọn quốc gia
+        </div>
       </div>
       <div class="col-md-3">
-        <label for="validationDefault05" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="validationDefault05" required>
+        <label for="validationCustom05" class="form-label">Ghi chú thêm </label>
+        <input type="text" class="form-control" id="validationCustom05">
+        <div class="invalid-feedback">
+
+        </div>
       </div>
       <div class="col-12">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-          <label class="form-check-label" for="invalidCheck2">
-            Agree to terms and conditions
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Bạn chắc chắn với những thông tin này
           </label>
+          <div class="invalid-feedback">
+            Bạn quên đóng dấu nè
+          </div>
         </div>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-success" type="submit">Đăng ký </button>
       </div>
     </form>
   </section>
-  <!-- FOOTER  -->
-  <footer>
-    <div class="col-01">
-      <div class="row-1">
-        <img src="img/LOGO-2.png" alt="Logo final">
-      </div>
-
-      <div class="row-2">
-        <hr>
-      </div>
-
-      <div class="row-3">
-        <div class="text-wrapper">
-          <span style="font-size: 32px; color: white;"><strong>THE TREE</strong></span><span class="text-wrap-1"
-            style="color: white; font-size: 25px; text-align: justify;"> mong mang đến không gian sống xanh, như là một
-            cách để khơi nguồn cảm hứng, cải thiện chất lượng tinh
-            thần tươi
-            và đồng thời còn mang lại tính thẩm mỹ cho không gian nội thất.</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-02">
-      <div class="col-2-row-1">
-        <div class="text-wrapper-2">
-          <p style="color: white; font-size: 31px;">CÁC TRANG MẠNG XÃ HỘI</p>
-        </div>
-
-        <div class="icon-socialnet">
-          <img src="character/facebook.svg" alt="facebook">
-          <img src="character/instagram.svg" alt="instagram">
-          <img src="character/youtube.svg" alt="youtube">
-          <img src="character/mastercard.svg" alt="messenger">
-          <img src="character/x-twitter.svg" alt="x">
-        </div>
-      </div>
-
-      <div class="col-2-row-2">
-        <div class="text-wrapper-3">
-          <div class="text-wrapper-3-1">
-            <p style="color: white; font-size: 31px;">PHƯƠNG THỨC THANH TOÁN</p>
-          </div>
-        </div>
-        <div class="icon-socialnet">
-          <img src="character/paypal.svg" alt="facebook">
-          <img src="character/mastercard.svg" alt="instagram">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-03">
-      <p class="lien-he" style="font-size: 32px;">LIÊN HỆ</p>
-      <div class="div">
-        <p style="font-size: 27px;">SĐT: 0838 396 969 </p>
-        <p style="font-size: 27px;">ĐỊA CHỈ: 105 Trần Thị Trọng, phường 15, quận Tân Bình, TP.HCM</p>
-      </div>
-    </div>
-    <!-- xong footer  -->
-  </footer>
-  </div>
-
-<script src="js/user-register.js"></script>
 </body>
 
 </html>
