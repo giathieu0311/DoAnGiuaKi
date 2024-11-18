@@ -1,4 +1,12 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../asset/font/Poppins.ttf);
+}
+
 * {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -245,6 +253,14 @@ body {
   border-radius: 8px;
 }
 
+.board img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
 .board h5 {
   font-weight: 600;
   font-size: 14px;
@@ -264,134 +280,97 @@ body {
 }
 
 table {
-  font-weight: 700px;
+  border-collapse: collapse;
 }
 
 tr {
-  border-bottom: 1px solid #c9d7eb;
+  border-bottom: 1px solid #eef0f3;
 }
 
 thead td {
-  font-size: clamp(14px, 17px, 24px);
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
   background: #e6eaee;
   text-align: start;
   padding: 15px;
-  border: 1px solid black;
 }
 
 tbody tr td {
   padding: 10px 15px;
-  font-size: clamp(14px, 17px, 24px);
-  border: 1px solid black;
 }
 
-.trangThai p {
-  margin-bottom: 0rem;
-  background: hsl(57, 100%, 78%);
-  height: 40px;
-  border-radius: 28px;
-  font-weight: 900px;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
+.active p {
+  background: #d7fada;
+  padding: 2px 10px;
+  display: inline-block;
+  border-radius: 40px;
+  color: #2b2b2b;
 }
 
-.maDonHang,
-.soLuong,
-.thoiGianDatHang,
-.trangThai,
-.thanhTien,
-.chiTietDonHang {
-  text-align: center;
+.edit a {
+  text-decoration: none;
+  font-size: 14px;
+  color: 554cd1;
+  font-weight: 600;
 }
 
-.soLuong {
-  display: none;
-}
-
-.fa-circle-info {
-  color: rgb(34, 119, 158);
-}
-
-.filter-icon {
-  color: #444a53;
-  padding: 30px 40px 0 30px;
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 70px;
+.trash i {
+  color: red;
+  margin-right: 10px;
 }
 
 .filter {
-  position: relative;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-}
-
-.filter input {
-  width: 94px;
-  height: 27px;
-  border-radius: 10px;
-  border: 2px solid black;
-  margin-left: 5px;
+  justify-content: start;
+  padding-left: 30px;
 }
 
 .filter-feature {
-  position: relative;
-  left: 30px;
   display: flex;
-  width: 24em;
+  flex-direction: row;
 }
 
-.order-status button {
-  margin-left: 20px;
-}
-
-.dropdown-menu select {
-  width: 173px;
+.filter-feature input {
   border: 1px solid;
-  border-radius: 5px;
-}
-
-.filter-mobile {
-  display: none;
-}
-
-.filter-button {
-  display: block !important;
+  border-radius: 6px;
+  margin-left: 7px;
 }
 
 .filter-button,
-.filter-mobile button {
-  position: relative;
-  top: 10px;
-  left: 29px;
+.filter-mobile {
+  margin-left: 30px;
   width: 100px;
+  height: auto;
 }
 
-.dropdown-menu {
-  width: 18em;
-}
-.filter-mobile input {
-  border-radius: 5px;
-  height: 2em;
+.filter-mobile button {
+  width: 100px;
+  height: auto;
 }
 
-.loc {
-  font-weight: bold;
+.filter-mobile {
+  display: none !important;
 }
 
-.dropdown-menu li {
-  margin: 10px 0;
+.maDonHang,
+.tenSanPham,
+.soLuong,
+.thoiGianDatHang,
+.thanhTien,
+.trangThai {
+  text-align: center;
 }
 
-.dropdown-menu .dropdown-item {
-  width: 60px;
+.chiTietDonHang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 /* responsive */
 @media (max-width: 769px) {
   #menu {
@@ -436,13 +415,16 @@ tbody tr td {
     border-collapse: collapse;
   }
 
-  .filter,
+  .filter {
+    display: none !important;
+  }
+
   .filter-button {
     display: none !important;
   }
 
   .filter-mobile {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -459,20 +441,14 @@ tbody tr td {
     margin: 30px 15px 30px 15px;
   }
 
+  .filter-mobile {
+    display: block !important;
+  }
+
   .tenSanPham,
   .soLuong,
   .thoiGianDatHang,
-  .thanhTien,
-  .tenKhachHang {
+  .thanhTien {
     display: none;
-  }
-
-  .filter,
-  .filter-button {
-    display: none !important;
-  }
-
-  .filter-mobile {
-    display: block;
   }
 }
