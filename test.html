@@ -1,72 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Admin</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet" href="asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/fontawesome.min.css"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/test.css" />
-  </head>
-  <body>
-    <div class="header__wrapper">
-      <header></header>
-      <div class="cols__container">
-        <div class="left__col">
-          <div class="img__container">
-            <img src="image-admin/admin.jpg" alt="thieu" />
-            <span></span>
-          </div>
-          <h2>Anna Smith</h2>
-          <p>UX/UI Designer</p>
-          <p>anna@example.com</p>
+<html>
 
-          <ul class="about">
-            <li><span>4,073</span>Followers</li>
-            <li><span>322</span>Following</li>
-            <li><span>200,543</span>Attraction</li>
-          </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./css/user-register.css"> -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+  <script></script>
+  <title>Hoàn tất đặt hàng </title>
+</head>
 
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
-              erat volutpat. Morbi imperdiet, mauris ac auctor dictum, nisl
-              ligula egestas nulla.
-            </p>
-
-            <ul>
-              <li><i class="fab fa-twitter"></i></li>
-              <i class="fab fa-pinterest"></i>
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-dribbble"></i>
-            </ul>
-          </div>
+<body style="background-color: rgb(112, 106, 106);">
+  <section class="form-container ">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Họ và tên</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Họ và tên..." required>
+        <div class="valid-feedback">
+          Hoàn tất
         </div>
-        <div class="right__col">
-          <nav>
-            <ul>
-              <li><a href="">photos</a></li>
-              <li><a href="">galleries</a></li>
-              <li><a href="">groups</a></li>
-              <li><a href="">about</a></li>
-            </ul>
-            <button>Follow</button>
-          </nav>
-
-          <div class="photos">
-            <img src="img/img_1.avif" alt="Photo" />
-            <img src="img/img_2.avif" alt="Photo" />
-            <img src="img/img_3.avif" alt="Photo" />
-            <img src="img/img_4.avif" alt="Photo" />
-            <img src="img/img_5.avif" alt="Photo" />
-            <img src="img/img_6.avif" alt="Photo" />
+        <div class="invalid-feedback">
+          Nhập họ tên vào
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Số điện thoại</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Số điện thoại..." required>
+        <div class="valid-feedback">
+          Hoàn tất
+        </div>
+        <div class="invalid-feedback">
+          Nhập số điện thoại
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Gmail</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+            placeholder="Gmail..." required>
+          <div class="invalid-feedback">
+            Nhập gmail vào
           </div>
         </div>
       </div>
-    </div>
-  </body>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">Địa chỉ</label>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="Địa chỉ..." required>
+        <div class="invalid-feedback">
+          Nhập địa chỉ vào
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Quốc gia</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Hồ Chí Minh</option>
+          <option>Bình Định</option>
+          <option>Cần thơ</option>
+          <option>Bình Dương</option>
+        </select>
+        <div class="invalid-feedback">
+          Chọn quốc gia
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Ghi chú thêm </label>
+        <input type="text" class="form-control" id="validationCustom05">
+        <div class="invalid-feedback">
+
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Bạn chắc chắn với những thông tin này
+          </label>
+          <div class="invalid-feedback">
+            Bạn quên đóng dấu nè
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-success" type="submit">Đăng ký </button>
+      </div>
+    </form>
+  </section>
+</body>
+
 </html>
