@@ -290,6 +290,9 @@ body {
   display: flex;
   box-shadow: 1px 1px 9px 5px rgb(14, 95, 28);
   margin: 10px 3px 0 3px;
+  height: 145px;
+  width: 86%;
+  margin: 20px auto;
 }
 
 .detail-orders img {
@@ -304,12 +307,17 @@ body {
   width: 100%;
 }
 
+.detail p {
+  margin-bottom: 0rem;
+}
+
 .detail-product {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 10px;
   width: 100%;
+  font-size: 25px;
 }
 
 .amount {
@@ -318,13 +326,14 @@ body {
   justify-content: space-between;
   padding-left: 10px;
   width: 100%;
+  font-size: 25px;
 }
 
 .delete-button-back {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 0 100px 0;
+  padding: 30px 0 100px 0;
 }
 
 .delete-button-back button {
@@ -343,6 +352,10 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.total {
+  font-size: 25px;
 }
 
 /* responsive */
@@ -392,12 +405,11 @@ body {
 
   .detail-orders {
     display: flex;
-    flex-direction: column !important;
     padding: 15px 15px;
   }
 
   .detail-orders img {
-    width: 100%;
+    width: 25%;
   }
 
   .detail {
@@ -405,7 +417,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 151px;
+    height: 115px;
+    margin: 0 0 0 5px;
   }
 
   .detail-product,
@@ -454,5 +467,9 @@ body {
   .i-name-02 {
     font-size: 34px;
     padding-left: 15px;
+  }
+
+  .detail-orders img {
+    display: none;
   }
 }
