@@ -20,12 +20,12 @@ body {
   padding: 0 !important;
 }
 
-.dropdown-menu {
-  display: none !important; /* Ẩn mặc định */
+.choose .nav-item .dropdown-menu {
+  display: none;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block !important; /* Hiển thị khi hover hoặc focus */
+.nav-item:hover .dropdown-menu {
+  display: block;
 }
 
 /* STICKY */

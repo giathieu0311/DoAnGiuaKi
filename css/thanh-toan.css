@@ -20,12 +20,12 @@ body {
   padding: 0 !important;
 }
 
-.dropdown-menu {
-  display: none !important; /* Ẩn mặc định */
+.choose .nav-item .dropdown-menu {
+  display: none;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block !important; /* Hiển thị khi hover hoặc focus */
+.nav-item:hover .dropdown-menu {
+  display: block;
 }
 
 /* STICKY */
@@ -326,17 +326,22 @@ form input {
 .infor-for-banking {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  right: 100px;
-  margin-top: 18%;
-  display: none !important;
+  margin: 40px 0 0 0;
+  width: 83%;
+  background-color: #dbdbdb;
+  border-radius: 30px;
+  height: 12em;
+  display: none;
 }
 
-.display-infor-for-banking:checked ~ .infor-for-banking {
-  position: relative;
-  display: flex !important;
+.infor-for-banking input {
+  width: 89%;
+  height: 2em;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 
 .status-order {
@@ -769,6 +774,15 @@ footer {
     width: 100%;
     height: 10rem;
     align-items: center;
+  }
+
+  .infor-for-banking {
+    width: 100%;
+    height: 9em;
+  }
+
+  .frame-2 {
+    width: 93%;
   }
 
   footer p {

@@ -227,19 +227,47 @@
 
         <div class="enter-infor">
           <div class="choose-01 d-flex flex-row">
-            <input type="radio" name="choice" id="" />Sử dụng thông tin mặc định
+            <input
+              type="radio"
+              name="choice"
+              id="use-default-information"
+              class="macdinh" />Sử dụng thông tin mặc định
           </div>
 
           <div class="choose-02 d-flex flex-row">
-            <input type="radio" name="choice" id="sang" />Nhập thông tin mới
+            <input type="radio" name="choice" id="use-new-informaion" />Nhập
+            thông tin mới
           </div>
         </div>
 
-        <form action="" class="d-flex flex-column">
+        <form
+          id="new-information"
+          action=""
+          class="form__new-information"
+          style="display: none; flex-direction: column">
           <input type="text" placeholder="Tên người nhận" name="" id="" />
           <input type="email" placeholder="Email" name="" id="" />
           <input type="text" placeholder="Địa chỉ" name="" id="" />
           <input type="text" placeholder="Số điện thoại" name="" id="" />
+        </form>
+
+        <form
+          style="display: none; flex-direction: column"
+          id="default-information"
+          action=""
+          class="form__default-information">
+          <input type="text" placeholder="Nguyễn Phước Sang" name="" id="" />
+          <input
+            type="email"
+            placeholder="sangnguyen@gmail.com"
+            name=""
+            id="" />
+          <input
+            type="text"
+            placeholder="103A Phan Huy Ích, Quận Tân Bình, TP.HCM"
+            name=""
+            id="" />
+          <input type="text" placeholder="0111229988" name="" id="" />
         </form>
 
         <div class="infor-goods">
@@ -344,21 +372,20 @@
               class="display-infor-for-banking"
               type="checkbox"
               id="ticked" />
-            <label for="ticked"
-              ><img src="character/mastercard.svg" alt="mastercard"
-            /></label>
-            <label><img src="character/visa.svg" alt="" /></label>
-            <!-- thông tin chuyển khoản  -->
-            <div class="infor-for-banking mt-lg-5 text-wrap text-start fs-4">
-              <p>Số tài khoản: 1234567890</p>
-              <p>Ngân hàng: Vietcombank</p>
-              <p>Chủ tài khoản: Cửa hàng cây cảnh Thee Tree.</p>
-              <p>
-                Lưu ý: Nội dung chuyển khoản phải ghi mã đơn hàng và tên người
-                nhận.
-              </p>
-            </div>
+            <img
+              id="mastercard"
+              src="character/mastercard.svg"
+              alt="mastercard" />
+            <img src="character/visa.svg" alt="" />
           </div>
+        </div>
+
+        <!-- thông tin chuyển khoản  -->
+        <div
+          id="inforBanking"
+          class="infor-for-banking text-wrap text-start fs-4">
+          <input type="text" placeholder="Số tài khoản" />
+          <input type="text" placeholder="Mã thẻ" />
         </div>
 
         <div class="frame-2">
@@ -444,5 +471,6 @@
       </div>
       <!-- xong footer  -->
     </footer>
+    <script src="js/thanh-toan.js"></script>
   </body>
 </html>
