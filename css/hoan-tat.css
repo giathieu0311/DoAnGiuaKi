@@ -226,7 +226,7 @@ body {
 /* SECTION */
 .section img {
   width: 100%;
-  height: 23vw;
+  height: 17vw;
   object-fit: cover;
   object-position: 50% 50%;
   display: flex;
@@ -604,6 +604,13 @@ footer {
 
 /* MOBILE  */
 @media only screen and (max-width: 425.01px) {
+  .section img {
+    width: 100%;
+    height: 5em;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: flex;
+  }
   .infor-order {
     display: flex;
     flex-direction: column;
