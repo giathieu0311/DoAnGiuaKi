@@ -43,8 +43,19 @@ rangeInput.forEach(input =>{
 
 
 
-// next page
-let currentPage = 1;
+let currentPage = 1; // Giá trị mặc định
+
+// Xác định trang hiện tại từ URL
+function detectCurrentPage() {
+  const path = window.location.pathname;
+  if (path.includes("phan-loai1.html")) {
+    currentPage = 1;
+  } else if (path.includes("phan-loai2.html")) {
+    currentPage = 2;
+  } else if (path.includes("phan-loai3.html")) {
+    currentPage = 3;
+  }
+}
 
 // Cập nhật trạng thái nút và giao diện
 function updatePagination() {
@@ -80,7 +91,7 @@ document.getElementById("next").addEventListener("click", function (event) {
   event.preventDefault();
   if (currentPage < 3) {
     currentPage++;
-    updatePagination();
+    window.location.href = `phan-loai${currentPage}.html`;
   }
 });
 
@@ -89,7 +100,7 @@ document.getElementById("prev").addEventListener("click", function (event) {
   event.preventDefault();
   if (currentPage > 1) {
     currentPage--;
-    updatePagination();
+    window.location.href = `phan-loai${currentPage}.html`;
   }
 });
 
@@ -98,9 +109,10 @@ for (let i = 1; i <= 3; i++) {
   document.getElementById(`page-${i}`).addEventListener("click", function (event) {
     event.preventDefault();
     currentPage = i;
-    updatePagination();
+    window.location.href = `phan-loai${currentPage}.html`;
   });
 }
 
 // Khởi tạo trạng thái ban đầu
+detectCurrentPage();
 updatePagination();
