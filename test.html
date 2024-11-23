@@ -1,185 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Chi tiết đơn hàng</title>
-    <link href="./asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/detail-order.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+
 </head>
-
 <body>
-    <section id="menu">
-        <div class="logo">
-            <img src="image-admin/LOGO-2.png" alt="">
-            <h2>The Tree</h2>
-        </div>
-
-        <div class="items">
-            <li onclick="window.location.href='admin.html';"><i class="fa-solid fa-chart-pie"></i><a href="#">Bảng Điều khiển</a></li>
-            <li onclick="window.location.href='UI-element.html';"><i class="fa-brands fa-pagelines"></i><a href="#">Sản phẩm</a></li>
-            <li onclick="window.location.href='user-data.html';"><i class="fa-brands fa-elementor"></i><a href="#">Dữ liệu người dùng</a></li>
-            <!-- <li><i class="fa-solid fa-table"></i><a href="#">Tables</a></li> -->
-            <li  onclick="window.location.href='form.html';"><i class="fa-solid fa-pen-to-square"></i></i><a href="#">Thêm sản phẩm</a></li>
-            <!-- <li><i class="fa-solid fa-credit-card"></i><a href="#">Cards</a></li> -->
-            <li onclick="window.location.href='thong-ke.html';"><i class="fa-solid fa-chart-line"></i><a href="#">Blank</a></li>
-
-        </div>
-    </section>
-
-    <section id="interface">
-        <div class="navigation">
-            <div class="n1">
-                <div>
-                    <i id="menu-btn" class="fa-solid fa-bars"></i>
-                </div>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search">
-                </div>
-            </div>
-
-            <div class="profile">
-                <i class="fa-regular fa-bell"></i>
-                <img src="image-admin/admin.jpg" alt="">
-            </div>
-            <div class="thongbao">
-                <h3>Gia Thiệu</h3>
-                <ul>
-                    <li>
-                        <i class="fa-regular fa-user"></i>
-                        <a href="admin-profile.html">Hồ sơ</a>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-gear"></i>
-                        <a href="#">Cài đặt</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        <a class="logout-btn" href="admin-login.html">Đăng xuất</a>
-                        <script src="js/logout.js"></script>
-                    </li>
     
-    
-                </ul>
-            </div>
-            <script src="js/admin.js"></script> 
-        </div>
-
-        <div class="tieu-de d-flex justify-content-between">
-          <h3 class="i-name">Chi tiết đơn hàng </h3>
-        </div>
-
-        <div class="board" style="font-size: clamp(15px, 24px, 32px);">
-            <div class="order-information">
-              <h3>Thông tin đơn hàng</h3>
-              <hr style="width: 100%; color: rgb(11, 87, 11); border: 1.5px solid;">
-              <p><span style="font-weight: bold;">Mã đơn hàng</span>: DH001</p>
-              <p><span style="font-weight: bold;">Số lượng</span>: 3</p>
-              <p><span style="font-weight: bold;">Thời gian đặt hàng</span>: 01/11/2024</p>
-              <p><span style="font-weight: bold;">Trạng thái</span>: Chưa xử lý</p>
-              <p><span style="font-weight: bold;">Thành tiền</span>: 2.250.000</p>
-            </div>
-
-            <div class="client-information">
-              <h3>Thông tin khách hàng</h3>
-              <hr style="width: 100%; color: rgb(11, 87, 11); border: 1.5px solid;">
-              <p><span style="font-weight: bold;">Họ và tên</span>: Nguyễn Gia Thiệu</p>
-              <p><span style="font-weight: bold;">Số điện thoại</span>: 0366728304</p>
-              <p><span style="font-weight: bold;">Địa chỉ</span>: Phan Huy Ích, Quận Tân Bình, Thành phố Hồ Chí Minh</p>
-              <p><span style="font-weight: bold;">Ghi chú</span>: Không có</p>
-            </div>
-        </div>
-
-        <h3 class="i-name-02">Chi tiết sản phẩm </h3>
-
-        <div class="detail-orders">
-          <img src="img/CAY5.jpg" alt="">
-
-          <div class="detail">
-            <div class="detail-product">
-            <p>Cây phát tài</p>
-            <p>750.000</p>
-          </div>
-
-          <div class="amount">
-            <p>Số lượng</p>
-            <p>x3</p>
-          </div>
-
-          <div class="total">
-            <p>Tổng</p>
-            <p>2.250.000</p>
-          </div>
-          </div>
-        </div>
-
-        <div class="detail-orders">
-          <img src="img/CAY5.jpg" alt="">
-
-          <div class="detail">
-            <div class="detail-product">
-            <p>Cây phát tài</p>
-            <p>750.000</p>
-          </div>
-
-          <div class="amount">
-            <p>Số lượng</p>
-            <p>x3</p>
-          </div>
-
-          <div class="total">
-            <p>Tổng</p>
-            <p>2.250.000</p>
-          </div>
-          </div>
-        </div>
-
-
-        <div class="delete-button-back">
-            <!-- Button trigger modal -->
-                            <button style="width: 10em ;height: 4em; border-radius: 35px;;" type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                Xóa
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header" style="height: 64px;">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Chú ý</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close" style="position: relative; right: -33px;"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h5>Bạn có muốn xóa sản phầm này không</h5>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal" style="height: 56px;">Đóng</button>
-                                            <button type="button" class="btn btn-primary" style="height: 56px;">Xóa</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-            <button type="button" class="btn btn-success" onclick="window.location.href='user-data.html'" style="width: 15em ;height: 4em; border-radius: 35px;;">Quay lại</button>
-        </div>
-
-        <div class="overplay"></div>
-    </section>
-
-    <script>
-        $('#menu-btn').click(function () {
-            $('#menu').toggleClass("active");
-        })
-    </script>
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item disabled" id="prev">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item" id="page-1"><a class="page-link" href="#">1</a></li>
+          <li class="page-item" id="page-2"><a class="page-link" href="#">2</a></li>
+          <li class="page-item" id="page-3"><a class="page-link" href="#">3</a></li>
+          <li class="page-item" id="next">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <script src="js/test.js"></script>
 </body>
+</html>
