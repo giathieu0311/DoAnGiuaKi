@@ -20,12 +20,12 @@ body {
   padding: 0 !important;
 }
 
-.dropdown-menu {
-  display: none !important; /* Ẩn mặc định */
+.choose .nav-item .dropdown-menu {
+  display: none;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block !important; /* Hiển thị khi hover hoặc focus */
+.nav-item:hover .dropdown-menu {
+  display: block;
 }
 
 /* STICKY */
@@ -112,6 +112,34 @@ body {
 .search-group button {
   width: 50px;
   height: 40px;
+}
+
+.dropdown-menu {
+  padding: 20px !important; /* Padding lớn cho menu */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Viền nhẹ */
+  background-color: #fff; /* Màu nền */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+}
+
+.dropdown-item {
+  padding: 10px 15px !important; /* Khoảng cách nội dung trong từng mục */
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  border-radius: 10px !important; /* Bo góc nhẹ cho từng item */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  color: #333; /* Màu chữ */
+  border: none; /* Xóa viền bên trong */
+}
+
+/* Xóa khoảng cách cuối cùng */
+.dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Hiệu ứng hover */
+.dropdown-item:hover {
+  background-color: rgba(144, 238, 144, 0.2); /* Nền xanh nhạt khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+  color: #000;
 }
 
 .search-group img,

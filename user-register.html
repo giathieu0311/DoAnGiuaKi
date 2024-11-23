@@ -14,7 +14,8 @@
 </head>
 
 <body>
-  <div class="container-fluid" style="padding: 0;">
+  <div class="Sticky">
+    <div class="container-fluid" style="padding: 0 !important;">
     <!-- HEADER  -->
     <div class="header">
       <!-- MENU  -->
@@ -25,8 +26,7 @@
 
           <div class="search-group">
             <input type="search" placeholder="Search..." style="position: relative; left: 15%;">
-            <button class="btn"><img src="character/search.svg" style="position: relative; top: -15%"
-                alt="search"></button>
+            <button class="btn"><img src="character/search.svg" style="position: relative; top: -15%" alt="search"></button>
           </div>
 
 
@@ -35,7 +35,7 @@
             <a href="gio-hang.html"><img src="character/cart.svg" alt="cart"></a>
           </div>
           <div class="user-icon">
-
+    
             <label for="tick"><img src="character/user.svg" alt=""></label>
             <input id="tick" hidden type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample" />
@@ -43,8 +43,7 @@
               aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Nguyễn Phước Sang</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
-                  style="position: relative; right: 10px;"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="position: relative; right: 10px;"></button>
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -65,7 +64,7 @@
           </div>
         </div>
       </div>
-
+    
       <!-- BAR  -->
       <nav class="navbar  position-absolute">
         <div class="a">
@@ -73,12 +72,10 @@
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">THEE TREE</h5>
-              <button type="button" class="btn-close" style="position: relative; right: 10px;"
-                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close" style="position: relative; right: 10px;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body offcanvas-fullscreen mt-20">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -118,27 +115,41 @@
         </div>
       </nav>
     </div>
-  </div>
-
-
-
-  <!-- NAV  -->
-  <div class="nav">
-    <div class="brand">
-      <div class="brand-logo">
-        <!-- Quay về trang chủ  -->
-        <a href="trang-chu"><img class="img-fluid" src="img/LOGO-2.png" alt="LOGO"></a>
-      </div>
-      <div class="brand-name">THE TREE</div>
     </div>
-    <div class="choose">
-      <ul>
-        <li><a href="">Trang chủ</a></li>
-        <li><a href="">Giới thiệu</a></li>
-        <li><a href="">Sản phẩm</a></li>
-        <li><a href="">Tin tức</a></li>
-        <li><a href="">Liên hệ</a></li>
-      </ul>
+
+
+
+    <!-- NAV  -->
+    <div class="nav">
+      <div class="brand">
+        <div class="brand-logo">
+          <!-- Quay về trang chủ  -->
+          <a href="trang-chu"><img class="img-fluid" src="img/LOGO-2.png" alt="LOGO"></a>
+        </div>
+        <div class="brand-name">THE TREE</div>
+      </div>
+      <div class="choose">
+        <ul>
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Giới thiệu</a></li>
+          <li>
+            <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sản phẩm
+                  </a>
+                  <ul id="drop1" class="dropdown-menu" >
+                    <li><a class="dropdown-item" href="#">Cây trong nhà</a></li>
+                    <li><a class="dropdown-item" href="#">Cây dễ chăm</a></li>
+                    <li><a class="dropdown-item" href="#">Cây để bàn</a></li>
+                    <li><a class="dropdown-item" href="#">Cây dưới nước</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li><a href="">Tin tức</a></li>
+          <li><a href="">Liên hệ</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 
