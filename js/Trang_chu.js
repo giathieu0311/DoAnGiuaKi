@@ -8,7 +8,7 @@ const products = [
     price: "320.000 vnđ",
     image: "../img/CAY9.jpg",
   },
-  { name: "Cây lưỡi hổ", price: "750.000 vnđ", image: "./img/CAY10.jpg" },
+  { name: "Cây lưỡi hổ", price: "750.000 vnđ", image: "../img/CAY10.jpg" },
   {
     name: "Cây lưỡi hổ vàng",
     price: "160.000 vnđ",
