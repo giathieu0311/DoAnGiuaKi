@@ -14,11 +14,8 @@
 
 body {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  background-color: #E5e7eb;
+  position: relative;
   display: flex;
 }
 
@@ -417,10 +414,6 @@ a {
     overflow: auto;
     padding: 0 0 30px;
   }
-  #interface .navigation {
-    width: 100%;
-    z-index: 5;
-  }
 }
 
 @media (min-width: 1017px) {
@@ -433,10 +426,6 @@ a {
   }
   .header__wrapper .cols__container .right__col nav button {
     margin-top: 0;
-  }
-
-  #interface .navigation {
-    z-index: 5;
   }
 }
 
@@ -472,7 +461,6 @@ a {
 
   #interface .navigation {
     width: 100%;
-    z-index: 5;
   }
 
   .values {

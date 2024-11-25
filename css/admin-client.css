@@ -451,11 +451,6 @@ a {
         padding: 0 0 30px;
     }
 
-    #interface .navigation {
-        width: 100%;
-        z-index: 5;
-
-    }
 }
 
 @media (min-width: 1017px) {
@@ -472,10 +467,6 @@ a {
         margin-top: 0;
     }
 
-    #interface .navigation {
-        z-index: 5;
-
-    }
 }
 
 /* responsive */

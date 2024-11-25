@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TheTree Dashboard</title>
-    <link href="./asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/form.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="../asset/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/admin-details.css">
+    <script src="/js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
-    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="/asset/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
+    
     <section id="menu">
         <div class="logo">
-            <img src="image-admin/LOGO-2.png" alt="">
+            <img src="/image-admin/LOGO-2.png" alt="">
             <h2>The Tree</h2>
         </div>
 
         <div class="items">
-            <li onclick="window.location.href='admin.html';"><i class="fa-solid fa-chart-pie"></i><a href="#">Bảng Điều khiển</a></li>
+            <li onclick="window.location.href='index.html';"><i class="fa-solid fa-chart-pie"></i><a href="#">Bảng Điều khiển</a></li>
             <li onclick="window.location.href='UI-element.html';"><i class="fa-brands fa-pagelines"></i><a href="#">Sản phẩm</a></li>
             <li onclick="window.location.href='user-data.html';"><i class="fa-brands fa-elementor"></i><a href="#">Dữ liệu người dùng</a></li>
             <!-- <li><i class="fa-solid fa-table"></i><a href="#">Tables</a></li> -->
@@ -47,7 +48,7 @@
 
             <div class="profile">
                 <i class="fa-regular fa-bell"></i>
-                <img src="image-admin/admin.jpg" alt="">
+                <img src="/image-admin/admin.jpg" alt="">
             </div>
             <div class="thongbao">
                 <h3>Gia Thiệu</h3>
@@ -55,6 +56,7 @@
                     <li>
                         <i class="fa-regular fa-user"></i>
                         <a href="admin-profile.html">Hồ sơ</a>
+
                     </li>
 
                     <li>
@@ -64,19 +66,19 @@
                     <li>
                         <i class="fa-solid fa-right-from-bracket"></i>
                         <a class="logout-btn" href="#">Đăng xuất</a>
-                        <script src="js/logout.js"></script>
+                        <script src="/js/logout.js"></script>
                     </li>
     
     
                 </ul>
             </div>
-            <script src="js/admin.js"></script> 
+            <script src="/js/admin.js"></script> 
         </div>
 
         <h3 class="i-name">Chi tiết sản phẩm </h3>
         <div class="wrapper">
             <div class="card">
-                <img src="image-admin/upload.png" alt="" id="profile-pic">
+                <img src="/img/CAY5.jpg" alt="" id="profile-pic">
                 <label for="input-file">cập nhật</label>
                 <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
             </div>
@@ -84,27 +86,35 @@
             <div class="edit">
                 <form id="tree-form">
                     <label for="tree-name">Tên cây:</label><br>
-                    <input type="text" id="tree-name" placeholder="tên cây...">
+                    <input type="text" id="tree-name" value="Cây phát tài">
                 </form>
                 <form id="tree-form">
                     <label for="tree-price">Giá sản phẩm:</label><br>
-                    <input type="text" id="tree-price" placeholder="giá...">
+                    <input type="text" id="tree-price" value="750.000 vnđ">
                 </form>
                 <form id="tree-form">
                     <label for="tree-small-des">Mô tả ngắn:</label><br>
                     <textarea
-                        id="tree-small-des" placeholder="mô tả ngắn..."></textarea>
+                        id="tree-small-des">Cây phát tài bộ còn được biết đến với tên gọi khác là cây thiết mộc lan. Loài cây nội thất được đánh giá là đem lại nhiều sinh khí, may mắn và thịnh vượng cho gia chủ, nhất là khi cây nở hoa là dấu hiệu tiền tài đang đến với bạn. Hơn nữa, nếu bạn đặt cây theo hướng Đông hay Đông Nam của ngôi nhà thì sẽ đem tới nhiều may mắn bởi cây là đại diện cho hành Mộc.</textarea>
                 </form>
 
                 <form id="tree-form">
                     <label for="tree-big-des">Mô tả chi tiết:</label><br>
                     <textarea
-                        id="tree-big-des" placeholder="mô tả chi tiết..."></textarea>
+                        id="tree-big-des">Cây phát tài bộ còn được biết đến với tên gọi khác là cây thiết mộc lan, là một loại cây cảnh phổ biến được nhiều người yêu thích bởi vẻ đẹp thanh tao, sang trọng và ý nghĩa phong thủy tốt đẹp. Cây có tên khoa học là Dracaena fragrans, thuộc họ Dracaenaceae. Cây có nguồn gốc từ Tây Phi, hiện nay được trồng phổ biến ở nhiều nước trên thế giới, trong đó có Việt Nam.
+                    
+    Cây phát tài bộ là cây thân gỗ nhỏ, có chiều cao trung bình từ 0,5 đến 1,5m. Lá cây dài, xanh bóng. Hoa phát tài bộ có màu trắng, nhỏ và có mùi thơm dịu. Cây thường ra hoa vào mùa hè.
+                    
+    Cây phát tài bộ là cây có ý nghĩa phong thủy rất tốt. Trong phong thủy, cây phát tài bộ được coi là biểu tượng của sự may mắn, tài lộc và thịnh vượng. Cây cũng được coi là biểu tượng của sự bền vững và trường tồn.
+                    
+    Cây phát tài bộ là cây rất dễ trồng và chăm sóc. Cây có thể sống trong điều kiện ánh sáng yếu, tuy nhiên cây sẽ phát triển tốt nhất trong điều kiện ánh sáng trung bình. Cây không cần nhiều nước, chỉ cần tưới nước 2-3 lần/tuần. Cây cũng không cần bón phân nhiều, chỉ cần bón phân 1-2 lần/tháng.
+                    
+    Cây phát tài bộ là cây cảnh rất đẹp và có ý nghĩa phong thủy tốt đẹp. Cây là lựa chọn tuyệt vời để trang trí cho ngôi nhà, văn phòng hoặc cơ sở kinh doanh của bạn.</textarea>
                 </form>
                 <div class="btn-submit">
-                    <button onclick="window.location.href='admin.html';" type="button"
-                        class="btn btn-danger">Trang chủ</button>
-                    <button type="button" class="btn btn-success" id="toastbtn">Thêm</button>
+                    <button onclick="window.location.href='UI-element.html';" type="button"
+                        class="btn btn-danger">Hủy</button>
+                    <button type="button" class="btn btn-success" id="toastbtn">Cập nhật</button>
                 </div>
             </div>
         </div>
@@ -114,7 +124,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
             </div>
             <div class="toast-body">
-                <p>Bạn đã thêm sản phẩm thành công </p>
+                <p>Bạn đã cập nhật thành công </p>
             </div>
         </div>
     </section>
