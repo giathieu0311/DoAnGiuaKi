@@ -96,6 +96,7 @@ body {
 }
 
 .item-header {
+  padding-right: 0px;
   display: flex;
   align-items: center;
   gap: 3%;
