@@ -20,12 +20,35 @@ body {
   padding: 0 !important;
 }
 
-.dropdown-menu {
-  display: none !important; /* Ẩn mặc định */
+.choose .nav-item .dropdown-menu {
+  display: none;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block !important; /* Hiển thị khi hover hoặc focus */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  padding: 20px !important; /* Padding lớn cho menu */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Viền nhẹ */
+  background-color: #fff; /* Màu nền */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+}
+
+.dropdown-item {
+  padding: 10px 15px !important; /* Khoảng cách nội dung trong từng mục */
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  border-radius: 10px !important; /* Bo góc nhẹ cho từng item */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  color: #333; /* Màu chữ */
+  border: none; /* Xóa viền bên trong */
+}
+
+/* Hiệu ứng hover */
+.dropdown-item:hover {
+  background-color: rgba(144, 238, 144, 0.2); /* Nền xanh nhạt khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+  color: #000;
 }
 
 /* STICKY */
@@ -107,6 +130,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .search-group button {
@@ -124,34 +148,6 @@ body {
 .user-icon {
   display: flex;
   flex-direction: column;
-}
-
-.dropdown-menu {
-  padding: 20px !important; /* Padding lớn cho menu */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* Viền nhẹ */
-  background-color: #fff; /* Màu nền */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
-}
-
-.dropdown-item {
-  padding: 10px 15px !important; /* Khoảng cách nội dung trong từng mục */
-  margin-bottom: 10px; /* Khoảng cách giữa các mục */
-  border-radius: 10px !important; /* Bo góc nhẹ cho từng item */
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  color: #333; /* Màu chữ */
-  border: none; /* Xóa viền bên trong */
-}
-
-/* Xóa khoảng cách cuối cùng */
-.dropdown-item:last-child {
-  margin-bottom: 0;
-}
-
-/* Hiệu ứng hover */
-.dropdown-item:hover {
-  background-color: rgba(144, 238, 144, 0.2); /* Nền xanh nhạt khi hover */
-  transform: scale(1.05); /* Phóng to nhẹ khi hover */
-  color: #000;
 }
 
 .list-option-user {
@@ -186,6 +182,54 @@ body {
 
 .user-icon {
   position: relative;
+}
+
+.product-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  width: 83%;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  left: 15%;
+}
+
+.product-list .product {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #dddf;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-list .product:hover {
+  background-color: #f4f4f4;
+}
+
+.product-list .product img {
+  width: 45%;
+  height: 30%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.product-list .product .p-details {
+  flex-grow: 1;
+}
+
+.product-list .product .p-details h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.product-list .product .p-details h3 {
+  margin: 5px 0 0;
+  font-size: 19px;
+  color: #888;
 }
 
 /* NAV */
