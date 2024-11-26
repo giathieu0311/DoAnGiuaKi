@@ -10,8 +10,7 @@
     <script src="../js/Trang_chu.js"></script>
     <link
       rel="stylesheet"
-      href="../asset/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css"
-    />
+      href="../asset/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" />
     <script src="../asset/js/bootstrap.bundle.min.js"></script>
     <title>Lịch sử người dùng</title>
   </head>
@@ -31,14 +30,12 @@
                   placeholder="Search..."
                   id="searchInput"
                   style="position: relative; left: 15%"
-                  oninput="filterProducts()"
-                />
+                  oninput="filterProducts()" />
                 <button class="btn">
                   <img
                     src="../character/search.svg"
                     style="position: relative; top: -15%"
-                    alt="search"
-                  />
+                    alt="search" />
                 </button>
 
                 <div class="product-list" id="productList">
@@ -154,14 +151,12 @@
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample"
-                />
+                  aria-controls="offcanvasExample" />
                 <div
                   class="offcanvas offcanvas-end"
                   tabindex="-1"
                   id="offcanvasExample"
-                  aria-labelledby="offcanvasExampleLabel"
-                >
+                  aria-labelledby="offcanvasExampleLabel">
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                       Nguyễn Phước Sang
@@ -170,8 +165,7 @@
                       type="button"
                       class="btn-close text-reset"
                       data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
+                      aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -201,16 +195,14 @@
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-              >
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div
                 class="offcanvas offcanvas-start"
                 tabindex="-1"
                 id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel"
-              >
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                     THEE TREE
@@ -219,8 +211,7 @@
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
+                    aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body offcanvas-fullscreen mt-20">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -238,8 +229,7 @@
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
+                        aria-expanded="false">
                         Sản phẩm
                       </a>
                       <ul class="dropdown-menu">
@@ -269,8 +259,7 @@
                       class="form-control me-2"
                       type="search"
                       placeholder="Search"
-                      aria-label="Search"
-                    />
+                      aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">
                       Search
                     </button>
@@ -311,8 +300,7 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false">
                   Sản phẩm
                 </a>
                 <ul class="dropdown-menu">
@@ -362,8 +350,7 @@
         <div class="order-information">
           <h3>Thông tin đơn hàng</h3>
           <hr
-            style="width: 100%; color: rgb(11, 87, 11); border: 1.5px solid"
-          />
+            style="width: 100%; color: rgb(11, 87, 11); border: 1.5px solid" />
           <p><span style="font-weight: bold">Mã đơn hàng</span>: DH001</p>
           <p><span style="font-weight: bold">Số lượng</span>: 10</p>
           <p>
@@ -377,8 +364,7 @@
         <div class="client-information">
           <h3>Thông tin khách hàng</h3>
           <hr
-            style="width: 100%; color: rgb(11, 87, 11); border: 1.5px solid"
-          />
+            style="width: 100%; color: rgb(11, 87, 11); border: 1.5px solid" />
           <p>
             <span style="font-weight: bold">Họ và tên</span>: Nguyễn Gia Thiệu
           </p>
@@ -481,66 +467,14 @@
 
       <div class="delete-button-back">
         <!-- Button trigger modal -->
-        <button
-          style="width: 10em; height: 4em; border-radius: 35px"
-          type="button"
-          class="btn btn-danger"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Xóa
-        </button>
 
         <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header" style="height: 64px">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Chú ý</h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  style="position: relative; right: -33px"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <h5>Bạn có muốn xóa sản phầm này không</h5>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                  style="height: 56px"
-                >
-                  Đóng
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  style="height: 56px"
-                >
-                  Xóa
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <button
           type="button"
           class="btn btn-success"
-          onclick="window.location.href='user-data.html'"
-          style="width: 15em; height: 4em; border-radius: 35px"
-        >
+          onclick="window.location.href='user-trang-chu.html'"
+          style="width: 15em; height: 4em; border-radius: 35px">
           Quay lại
         </button>
       </div>
@@ -570,8 +504,7 @@
               ><strong>THE TREE</strong></span
             ><span
               class="text-wrap-1"
-              style="color: white; font-size: 25px; text-align: justify"
-            >
+              style="color: white; font-size: 25px; text-align: justify">
               mong mang đến không gian sống xanh, như là một cách để khơi nguồn
               cảm hứng, cải thiện chất lượng tinh thần tươi và đồng thời còn
               mang lại tính thẩm mỹ cho không gian nội thất.</span

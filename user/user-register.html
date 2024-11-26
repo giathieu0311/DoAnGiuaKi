@@ -136,17 +136,53 @@
             </div>
 
             <div class="cart-icon">
-              <a href="gio-hang.html"
+              <a href="user-register.html"
                 ><img src="/character/cart.svg" alt="cart"
               /></a>
             </div>
-            <div class="login-button">
-                <a href="user-login.html">
-                  <div class="btn btn-outline" style="width: 7em">
-                    Đăng nhập
-                  </div>
-                </a>
+            <div class="user-icon">
+              <label for="tick" style="cursor: pointer"
+                ><img src="/character/user.svg" alt=""
+              /></label>
+              <input
+                id="tick"
+                hidden
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              />
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    Xin vui lòng đăng nhâp!
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="user-login.html">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="user-register.html">Đăng ký</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
           </div>
         </div>
 
@@ -299,7 +335,7 @@
 
   <!-- ARTICLE -->
   <section class="form-container ">
-    <form class="row g-3 needs-validation" novalidate>
+    <form class="row g-3 needs-validation" onsubmit="event.preventDefault(); window.location.href='user-login.html';" novalidate>
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label">Họ và tên</label>
         <input type="text" class="form-control" id="validationCustom01" placeholder="Họ và tên..." required>
@@ -341,9 +377,9 @@
       <div class="col-md-3">
         <label for="validationCustom04" class="form-label">Tỉnh/ Thành phố</label>
         <select class="form-select" id="validationCustom04" required>
-          <option selected disabled value="">Chọn</option>
-          <option>Tp. Hồ Chí Minh</option>
-          <option>Tp. Cần thơ</option>
+          <option selected disabled value="">Chọn tỉnh/ thành phố</option>
+          <option>TP. Hồ Chí Minh</option>
+          <option>TP. Cần thơ</option>
           <option>Bình Định</option>
           <option>Bình Dương</option>
         </select>
@@ -376,7 +412,7 @@
         </div>
       </div>
       <div class="col-12 d-flex justify-content-center">
-        <a href="user-login.html"><button class="btn btn-success" type="submit" onclick="checkPassword()">Đăng ký </button></a>
+        <button type="submit" class="btn btn-success" type="submit" onclick="checkPassword()">Đăng ký </button>
       </div>
     </form>
   </section>
