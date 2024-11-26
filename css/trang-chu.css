@@ -100,7 +100,7 @@ body {
   align-items: center;
   gap: 3%;
   justify-content: flex-end;
-  padding-right: 100px;
+  padding-right: 0px;
 }
 
 .brand-name {

@@ -134,7 +134,7 @@
             </div>
 
             <div class="cart-icon">
-              <a href="gio-hang.html"
+              <a href="user-login.html"
                 ><img src="/character/cart.svg" alt="cart"
               /></a>
             </div>
@@ -158,7 +158,7 @@
               >
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                    Nguyễn Phước Sang
+                    Xin vui lòng đăng nhập!
                   </h5>
                   <button
                     type="button"
@@ -169,15 +169,13 @@
                 </div>
                 <div class="offcanvas-body">
 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    
+                    
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Hồ sơ</a>
-                    </li>
-                    <li class="nav-item dropdown"></li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Lịch sử mua hàng</a>
+                      <a class="nav-link" href="user-login.html">Đăng nhập</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html">Đăng xuất</a>
+                      <a class="nav-link" href="user-register.html">Đăng ký</a>
                     </li>
                   </ul>
                 </div>
@@ -334,8 +332,8 @@
     </div>
 
     <!-- ARTICLE -->
-     <h2 id="dangky">Đăng ký</h2>
-    <form>
+     <h2 id="dangky">Đăng nhập</h2>
+    <form onsubmit="event.preventDefault(); window.location.href='user-trang-chu.html';">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Gmail:</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Gmail..." required>
