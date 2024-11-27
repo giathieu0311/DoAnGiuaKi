@@ -178,7 +178,7 @@ body {
   /* z-index: 840; */
   /* height: 50vh; */
   width: 18vh;
-right: -49px;
+  right: -49px;
   top: 103%;
   justify-content: center;
   align-items: center;
@@ -254,20 +254,20 @@ right: -49px;
 /* NAV */
 
 .choose .nav-item .dropdown-menu {
-display: none;
+  display: none;
 }
 
 .nav-item:hover .dropdown-menu {
-display: block;
+  display: block;
 }
 
 /* ============================================ */
 /* Thêm padding dày cho dropdown menu */
-.filter{
-  display:flex ;
+.filter {
+  display: flex;
 }
 
-#filterf1{
+#filterf1 {
   display: flex;
   margin-top: 10px;
   margin-left: 20px;
