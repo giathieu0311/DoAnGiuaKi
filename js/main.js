@@ -40,7 +40,7 @@ function clickCart() {
   // Kiểm tra nếu đã đăng nhập
   if (isLogin === true) {
     // Nếu đã đăng nhập, chuyển tới trang giỏ hàng
-    window.location.href = "gio-hang.html";
+    window.location.href = "thanh-toan.html";
   } else {
     // Nếu chưa đăng nhập, chuyển tới trang đăng nhập
     window.location.href = "user-login.html";
