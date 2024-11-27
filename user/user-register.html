@@ -10,6 +10,7 @@
   <script src="/asset/js/bootstrap.bundle.min.js"></script>
 
   <script></script>
+  <script src="/js/main.js"></script>
   <title>Hoàn tất đặt hàng </title>
 </head>
 
@@ -174,11 +175,35 @@
                     
                     
                     <li class="nav-item">
-                      <a class="nav-link" href="user-login.html">Đăng nhập</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="user-register.html">Đăng ký</a>
-                    </li>
+                        <a
+                          class="nav-link login-logout"
+                          href="user-register.html"
+                          >Đăng kí</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link login-logout" href="user-login.html"
+                          >Đăng nhập</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link hs-ls-dx" href="#">Hồ sơ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hs-ls-dx" href="user-History.html"
+                          >Lịch sử mua hàng</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link hs-ls-dx"
+                          href="index.html"
+                          onclick="logOut()"
+                          >Đăng xuất</a
+                        >
+                      </li>
                   </ul>
                 </div>
               </div>
@@ -219,7 +244,7 @@
               <div class="offcanvas-body offcanvas-fullscreen mt-20">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a class="nav-link active" aria-current="page" href="index.html"
                       >Trang chủ</a
                     >
                   </li>
@@ -291,7 +316,7 @@
         <ul>
           <li>
             <a
-              href="#"
+              href="index.html"
               ```````````````````````````````````````````
               style="font-weight: bold"
               >Trang chủ</a

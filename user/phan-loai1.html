@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../asset/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="../asset/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" />
+      href="../asset/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
     <script src="../asset/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
     <title>Trang Chủ</title>
   </head>
 
@@ -28,12 +30,14 @@
                   placeholder="Tìm kiếm..."
                   id="searchInput"
                   style="position: relative; left: 15%"
-                  oninput="filterProducts()" />
+                  oninput="filterProducts()"
+                />
                 <button class="btn">
                   <img
                     src="/character/search.svg"
                     style="position: relative; top: -15%"
-                    alt="search" />
+                    alt="search"
+                  />
                 </button>
 
                 <div class="product-list" id="productList">
@@ -148,12 +152,14 @@
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample" />
+                  aria-controls="offcanvasExample"
+                />
                 <div
                   class="offcanvas offcanvas-end"
                   tabindex="-1"
                   id="offcanvasExample"
-                  aria-labelledby="offcanvasExampleLabel">
+                  aria-labelledby="offcanvasExampleLabel"
+                >
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                       Nguyễn Phước Sang
@@ -162,21 +168,40 @@
                       type="button"
                       class="btn-close text-reset"
                       data-bs-dismiss="offcanvas"
-                      aria-label="Close"></button>
+                      aria-label="Close"
+                    ></button>
                   </div>
                   <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Hồ sơ</a>
+                        <a
+                          class="nav-link login-logout"
+                          href="user-register.html"
+                          >Đăng kí</a
+                        >
                       </li>
-                      <li class="nav-item dropdown"></li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="user-History.html"
+                        <a class="nav-link login-logout" href="user-login.html"
+                          >Đăng nhập</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link hs-ls-dx" href="#">Hồ sơ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hs-ls-dx" href="user-History.html"
                           >Lịch sử mua hàng</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="index.html">Đăng xuất</a>
+                        <a
+                          class="nav-link hs-ls-dx"
+                          href="index.html"
+                          onclick="logOut()"
+                          >Đăng xuất</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -194,14 +219,16 @@
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation">
+                aria-label="Toggle navigation"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div
                 class="offcanvas offcanvas-start"
                 tabindex="-1"
                 id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+                aria-labelledby="offcanvasNavbarLabel"
+              >
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                     THEE TREE
@@ -210,12 +237,16 @@
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="offcanvas-body offcanvas-fullscreen mt-20">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="index.html"
                         >Trang chủ</a
                       >
                     </li>
@@ -228,7 +259,8 @@
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                        aria-expanded="false"
+                      >
                         Sản phẩm
                       </a>
                       <ul class="dropdown-menu">
@@ -258,7 +290,8 @@
                       class="form-control me-2"
                       type="search"
                       placeholder="Search"
-                      aria-label="Search" />
+                      aria-label="Search"
+                    />
                     <button class="btn btn-outline-success" type="submit">
                       Search
                     </button>
@@ -285,7 +318,7 @@
           <ul>
             <li>
               <a
-                href="#"
+                href="index.html"
                 ```````````````````````````````````````````
                 style="font-weight: bold"
                 >Trang chủ</a
@@ -299,7 +332,8 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Sản phẩm
                 </a>
                 <ul class="dropdown-menu">
@@ -368,14 +402,16 @@
               min="0"
               max="1000000"
               value="250000"
-              step="10000" />
+              step="10000"
+            />
             <input
               type="range"
               class="range-max"
               min="0"
               max="1000000"
               value="750000"
-              step="10000" />
+              step="10000"
+            />
           </div>
         </div>
 
@@ -385,7 +421,8 @@
             type="button"
             class="btn btn-outline-success dropdown-toggle"
             data-bs-toggle="dropdown"
-            aria-expanded="false">
+            aria-expanded="false"
+          >
             Ngũ hành
           </button>
           <ul class="dropdown-menu">
@@ -537,7 +574,8 @@
               ><strong>THE TREE</strong></span
             ><span
               class="text-wrap-1"
-              style="color: white; font-size: 25px; text-align: justify">
+              style="color: white; font-size: 25px; text-align: justify"
+            >
               mong mang đến không gian sống xanh, như là một cách để khơi nguồn
               cảm hứng, cải thiện chất lượng tinh thần tươi và đồng thời còn
               mang lại tính thẩm mỹ cho không gian nội thất.</span

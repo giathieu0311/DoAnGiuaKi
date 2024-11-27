@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
     <script src="/asset/js/bootstrap.bundle.min.js"></script>
     <script src="/js/Trang_chu.js"></script>
+    <script src="/js/main.js"></script>
     <title>Hoàn tất thanh toán</title>
   </head>
 
@@ -25,12 +26,14 @@
                   placeholder="Tìm kiếm..."
                   id="searchInput"
                   style="position: relative; left: 15%"
-                  oninput="filterProducts()" />
+                  oninput="filterProducts()"
+                />
                 <button class="btn">
                   <img
                     src="/character/search.svg"
                     style="position: relative; top: -15%"
-                    alt="search" />
+                    alt="search"
+                  />
                 </button>
 
                 <div class="product-list" id="productList">
@@ -148,12 +151,14 @@
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample" />
+                  aria-controls="offcanvasExample"
+                />
                 <div
                   class="offcanvas offcanvas-end"
                   tabindex="-1"
                   id="offcanvasExample"
-                  aria-labelledby="offcanvasExampleLabel">
+                  aria-labelledby="offcanvasExampleLabel"
+                >
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                       Nguyễn Phước Sang
@@ -162,21 +167,40 @@
                       type="button"
                       class="btn-close text-reset"
                       data-bs-dismiss="offcanvas"
-                      aria-label="Close"></button>
+                      aria-label="Close"
+                    ></button>
                   </div>
                   <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Hồ sơ</a>
+                        <a
+                          class="nav-link login-logout"
+                          href="user-register.html"
+                          >Đăng kí</a
+                        >
                       </li>
-                      <li class="nav-item dropdown"></li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="user-History.html"
+                        <a class="nav-link login-logout" href="user-login.html"
+                          >Đăng nhập</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link hs-ls-dx" href="#">Hồ sơ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hs-ls-dx" href="user-History.html"
                           >Lịch sử mua hàng</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng xuất</a>
+                        <a
+                          class="nav-link hs-ls-dx"
+                          href="index.html"
+                          onclick="logOut()"
+                          >Đăng xuất</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -194,14 +218,16 @@
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation">
+                aria-label="Toggle navigation"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div
                 class="offcanvas offcanvas-start"
                 tabindex="-1"
                 id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+                aria-labelledby="offcanvasNavbarLabel"
+              >
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                     THEE TREE
@@ -210,12 +236,16 @@
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                    aria-label="Close"
+                  ></button>
                 </div>
                 <div class="offcanvas-body offcanvas-fullscreen mt-20">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="index.html"
                         >Trang chủ</a
                       >
                     </li>
@@ -228,7 +258,8 @@
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                        aria-expanded="false"
+                      >
                         Sản phẩm
                       </a>
                       <ul class="dropdown-menu">
@@ -266,7 +297,8 @@
                       class="form-control me-2"
                       type="search"
                       placeholder="Search"
-                      aria-label="Search" />
+                      aria-label="Search"
+                    />
                     <button class="btn btn-outline-success" type="submit">
                       Search
                     </button>
@@ -293,7 +325,7 @@
           <ul>
             <li>
               <a
-                href="#"
+                href="index.html"
                 ```````````````````````````````````````````
                 style="font-weight: bold"
                 >Trang chủ</a
@@ -307,7 +339,8 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Sản phẩm
                 </a>
                 <ul class="dropdown-menu">
@@ -368,7 +401,8 @@
               type="radio"
               name="choice"
               id="use-default-information"
-              class="macdinh" />Sử dụng thông tin mặc định
+              class="macdinh"
+            />Sử dụng thông tin mặc định
           </div>
 
           <div class="choose-02 d-flex flex-row">
@@ -381,7 +415,8 @@
           id="new-information"
           action=""
           class="form__new-information"
-          style="display: none; flex-direction: column; font-weight: bold">
+          style="display: none; flex-direction: column; font-weight: bold"
+        >
           <div class="d-flex flex-column">
             <label for="">Tên người nhận</label>
             <input type="text" placeholder="Tên người nhận" name="" id="" />
@@ -404,7 +439,8 @@
           style="display: none; flex-direction: column; font-weight: bold"
           id="default-information"
           action=""
-          class="form__default-information">
+          class="form__default-information"
+        >
           <div class="d-flex flex-column">
             <label for="">Tên người nhận</label>
             <input
@@ -412,7 +448,8 @@
               name=""
               id=""
               placeholder="Nguyễn Phước Sang"
-              disabled />
+              disabled
+            />
           </div>
           <div class="d-flex flex-column">
             <label for="">Email</label>
@@ -421,7 +458,8 @@
               name=""
               id=""
               placeholder="sangnguyen@gmail.com"
-              disabled />
+              disabled
+            />
           </div>
           <div class="d-flex flex-column">
             <label for="">Địa chỉ</label>
@@ -430,7 +468,8 @@
               placeholder="103A Phan Huy Ích, Phường 15, Quận Gò Vấp, TP.HCM"
               name=""
               id=""
-              disabled />
+              disabled
+            />
           </div>
           <div class="d-flex flex-column">
             <label for="">Số điện thoại</label>
@@ -439,7 +478,8 @@
               placeholder="0937466473"
               name=""
               id=""
-              disabled />
+              disabled
+            />
           </div>
         </form>
 
@@ -462,7 +502,8 @@
                   class="btn"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
-                  style="width: 53px">
+                  style="width: 53px"
+                >
                   <img src="/character/trash.svg" alt="trash" />
                 </button>
 
@@ -472,7 +513,8 @@
                   id="exampleModal"
                   tabindex="-1"
                   aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -484,10 +526,12 @@
                           class="btn-close"
                           style="width: 10%"
                           data-bs-dismiss="modal"
-                          aria-label="Close"></button>
+                          aria-label="Close"
+                        ></button>
                       </div>
                       <div
-                        class="modal-body d-flex justify-content-center align-items-center">
+                        class="modal-body d-flex justify-content-center align-items-center"
+                      >
                         Bạn có chắc muốn xóa sản phẩm chứ!
                       </div>
                       <div class="modal-footer d-flex flex-row">
@@ -495,13 +539,15 @@
                           type="button"
                           class="btn btn-secondary"
                           style="width: 20%"
-                          data-bs-dismiss="modal">
+                          data-bs-dismiss="modal"
+                        >
                           Đóng
                         </button>
                         <button
                           type="button"
                           class="btn btn-primary"
-                          style="width: 45%">
+                          style="width: 45%"
+                        >
                           Xóa
                         </button>
                       </div>
@@ -527,7 +573,8 @@
         </div>
 
         <div
-          class="enter-infor-02 gap-lg-3 d-flex flex-column justify-content-start">
+          class="enter-infor-02 gap-lg-3 d-flex flex-column justify-content-start"
+        >
           <div class="choose-02-01 d-flex flex-row">
             <input type="radio" name="radio" />Thanh toán khi nhận hàng
           </div>
@@ -544,11 +591,13 @@
               hidden
               class="display-infor-for-banking"
               type="checkbox"
-              id="ticked" />
+              id="ticked"
+            />
             <img
               id="mastercard"
               src="/character/mastercard.svg"
-              alt="mastercard" />
+              alt="mastercard"
+            />
             <img src="/character/visa.svg" alt="" />
           </div>
         </div>
@@ -556,7 +605,8 @@
         <!-- thông tin chuyển khoản  -->
         <div
           id="inforBanking"
-          class="infor-for-banking text-wrap text-start fs-4">
+          class="infor-for-banking text-wrap text-start fs-4"
+        >
           <input type="text" placeholder="Số tài khoản" />
           <input type="text" placeholder="Mã thẻ" />
         </div>
@@ -594,7 +644,8 @@
               ><strong>THE TREE</strong></span
             ><span
               class="text-wrap-1"
-              style="color: white; font-size: 25px; text-align: justify">
+              style="color: white; font-size: 25px; text-align: justify"
+            >
               mong mang đến không gian sống xanh, như là một cách để khơi nguồn
               cảm hứng, cải thiện chất lượng tinh thần tươi và đồng thời còn
               mang lại tính thẩm mỹ cho không gian nội thất.</span
